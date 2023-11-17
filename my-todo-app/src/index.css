@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Main container  */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 50px;
+  width: 100%;
+}
+
+/* Form and List  */
+form {
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Todo Item  */
+.todo-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 350px;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.todo-item button {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.todo-item button:first-of-type {
+  background-color: #48c774;
+  margin-right: 10px;
+}
+
+.remove-button {
+  background-color: lightpink;
+}
+
+.remove-button:hover {
+  background-color: #f04e4e;
+}
+.todo-add {
+  background-color: rgba(12, 94, 112, 0.825);
+  color: #f4f4f4;
+  font-weight: bold;
+}
